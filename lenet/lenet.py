@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-from torch.nn.modules import linear
 
 class LeNet(nn.Module):
     def __init__(self, num_classes=10):

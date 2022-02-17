@@ -58,7 +58,7 @@ class KMeans:
     def plot_clusters(self):
         colors = iter(cm.rainbow(np.linspace(0, 1, self.num_clusters)))
         for i in self.classes:
-            plt.scatter(X[:, 0][self.predictions == i], X[:, 1][self.predictions == i], color=next(colors))
+            plt.scatter(self.X[:, 0][self.predictions == i], self.X[:, 1][self.predictions == i], color=next(colors))
         plt.show()
 
 

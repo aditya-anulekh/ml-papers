@@ -30,6 +30,9 @@ class SVM:
         return np.sign(y_hat)
 
     def visualize_svm(self):
+        """
+        This function is only for two dimensional visualization
+        """
         x = np.linspace(min(self.X[:, 0]), max(self.X[:, 0]), 100)
         y = (-self.weights[0]*x + self.bias)/self.weights[1]
         plt.plot(x, y)
